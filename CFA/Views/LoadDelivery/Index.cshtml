@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ViewEntities.ViewLoadDelivery>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<table class="table">
+    @*
+        @if (TempData["notification"] != null)
+        {
+            var callingString = "SystemAlert('success', 'Deleted Sucssfully !')";
+        }
+        <script>
+         $.(document).ready(function (){
+        @callingString
+        });
+        </script>
+    *@
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FishTypeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LoadDeliveryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FishBoatName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BatchNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            @*<th></th>*@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FishTypeName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LoadDeliveryDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FishBoatName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BatchNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
+                    <a asp-action="Delete" asp-route-loadNo="@item.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

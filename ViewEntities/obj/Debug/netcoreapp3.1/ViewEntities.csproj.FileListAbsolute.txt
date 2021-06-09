@@ -1,0 +1,9 @@
+C:\Users\Mohamed\source\repos\CFA\ViewEntities\bin\Debug\netcoreapp3.1\ViewEntities.deps.json
+C:\Users\Mohamed\source\repos\CFA\ViewEntities\bin\Debug\netcoreapp3.1\ViewEntities.dll
+C:\Users\Mohamed\source\repos\CFA\ViewEntities\bin\Debug\netcoreapp3.1\ViewEntities.pdb
+C:\Users\Mohamed\source\repos\CFA\ViewEntities\obj\Debug\netcoreapp3.1\ViewEntities.csprojAssemblyReference.cache
+C:\Users\Mohamed\source\repos\CFA\ViewEntities\obj\Debug\netcoreapp3.1\ViewEntities.AssemblyInfoInputs.cache
+C:\Users\Mohamed\source\repos\CFA\ViewEntities\obj\Debug\netcoreapp3.1\ViewEntities.AssemblyInfo.cs
+C:\Users\Mohamed\source\repos\CFA\ViewEntities\obj\Debug\netcoreapp3.1\ViewEntities.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed\source\repos\CFA\ViewEntities\obj\Debug\netcoreapp3.1\ViewEntities.dll
+C:\Users\Mohamed\source\repos\CFA\ViewEntities\obj\Debug\netcoreapp3.1\ViewEntities.pdb

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ViewEntities.ViewPurchaseOrder>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AgentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchaseOrderStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateTime)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseOrderStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+            <td>
+                @if (item.PurchaseOrderStatus== CFA.Areas.Common.Constants.PurchaseOrderStatusPENDDING)
+                {
+                    <a asp-action="ApproveOrder" asp-route-orderNo="@item.Id" class="btn btn-info btn-mini b-none">Approve</a>
+                }
+
+                @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

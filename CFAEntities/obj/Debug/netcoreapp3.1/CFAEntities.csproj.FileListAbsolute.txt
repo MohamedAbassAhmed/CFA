@@ -1,0 +1,9 @@
+C:\Users\Mohamed\source\repos\CFA\CFAEntities\bin\Debug\netcoreapp3.1\CFAEntities.deps.json
+C:\Users\Mohamed\source\repos\CFA\CFAEntities\bin\Debug\netcoreapp3.1\CFAEntities.dll
+C:\Users\Mohamed\source\repos\CFA\CFAEntities\bin\Debug\netcoreapp3.1\CFAEntities.pdb
+C:\Users\Mohamed\source\repos\CFA\CFAEntities\obj\Debug\netcoreapp3.1\CFAEntities.csprojAssemblyReference.cache
+C:\Users\Mohamed\source\repos\CFA\CFAEntities\obj\Debug\netcoreapp3.1\CFAEntities.AssemblyInfoInputs.cache
+C:\Users\Mohamed\source\repos\CFA\CFAEntities\obj\Debug\netcoreapp3.1\CFAEntities.AssemblyInfo.cs
+C:\Users\Mohamed\source\repos\CFA\CFAEntities\obj\Debug\netcoreapp3.1\CFAEntities.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed\source\repos\CFA\CFAEntities\obj\Debug\netcoreapp3.1\CFAEntities.dll
+C:\Users\Mohamed\source\repos\CFA\CFAEntities\obj\Debug\netcoreapp3.1\CFAEntities.pdb
