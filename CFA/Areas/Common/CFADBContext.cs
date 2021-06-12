@@ -103,8 +103,7 @@ namespace CFA.Areas.Common
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(Constants.ConnectionString);
-
+            optionsBuilder.UseSqlServer(Constants.ConnectionStringTest);
         }
         public virtual DbSet<FishType> FishTypes { get; set; }
         public virtual DbSet<LoadDelivery> LoadDeliveries { get; set; }

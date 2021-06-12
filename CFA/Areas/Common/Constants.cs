@@ -17,6 +17,7 @@ namespace CFA.Areas.Common
         }
         
         public static string ConnectionString = "Server=.;Database=CFADB;User Id=sa;Password=123456;MultipleActiveResultSets=true";
+        public static string ConnectionStringTest = "Server=.;Database=CFADBTest;User Id=sa;Password=123456;MultipleActiveResultSets=true";
         public const string PurchaseOrderStatusNEW = "New";
         public const string PurchaseOrderStatusPENDDING = "Pendding";
         public const string PurchaseOrderStatusApproved = "Approved";

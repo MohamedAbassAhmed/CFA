@@ -17,21 +17,14 @@ namespace CFA.Areas.Common
         {
             try
             {
-
-
                 //check the boat
-                var fishBoat = await DB.findRecord<FishBoat>(boatNo);
-                if (!fishBoat.result || fishBoat.Model == null)
+                if (!await isFishBoatExist(boatNo))
                 {
                     return false;
                 }
                 //check the fishType
-                var fishType = await DB.findRecord<FishType>(fishTypeNo);
-                if (!fishType.result || fishType.Model == null)
-                {
-                    return false;
-                }
-                return true;
+                
+                return await isFishTypeExist(fishTypeNo);
             }
             catch (Exception ex)
             {
@@ -39,6 +32,24 @@ namespace CFA.Areas.Common
                 return false;
             }
 
+        }
+        public async Task<bool> isFishBoatExist(int boatNo)
+        {
+            var fishBoat = await DB.findRecord<FishBoat>(boatNo);
+            if (!fishBoat.result || fishBoat.Model == null)
+            {
+                return false;
+            }
+            return true;
+        }
+        public async Task<bool> isFishTypeExist(int fishTypeNo)
+        {
+            var fishType = await DB.findRecord<FishType>(fishTypeNo);
+            if (!fishType.result || fishType.Model == null)
+            {
+                return false;
+            }
+            return true;
         }
         public async Task<bool> createCFAAgentValidator(string agentName)
         {

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CFAEntities", "CFAEntities\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewEntities", "ViewEntities\ViewEntities.csproj", "{766CF083-3A2F-4993-B05B-F77207C6614A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCFA", "TestCFA\TestCFA.csproj", "{70986EDE-327D-42B1-B166-1641C4F4EC94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{766CF083-3A2F-4993-B05B-F77207C6614A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{766CF083-3A2F-4993-B05B-F77207C6614A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{766CF083-3A2F-4993-B05B-F77207C6614A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70986EDE-327D-42B1-B166-1641C4F4EC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70986EDE-327D-42B1-B166-1641C4F4EC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70986EDE-327D-42B1-B166-1641C4F4EC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70986EDE-327D-42B1-B166-1641C4F4EC94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

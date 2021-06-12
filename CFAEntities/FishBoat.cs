@@ -13,6 +13,6 @@ namespace CFAEntities
         public int Id { get; set; }
         [RegularExpression("^[A-Za-z ]+$",ErrorMessage ="The name must contain only letters and spaces")]
         public string FishBoatName { get; set; }
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; } = false;
     }
 }
